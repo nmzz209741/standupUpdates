@@ -12,6 +12,7 @@
     <div id="app">
         <team-intro :info='teamInfo'></team-intro>
         <team-updates :updates='updates'></team-updates>
+        <new-update :updates="updates" :members="teamInfo.members" v-on:update-updates = "updateUpdates"></new-update>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="./index.js"></script>
